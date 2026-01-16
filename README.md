@@ -1,4 +1,4 @@
-# 📦 PayHere Python SDK
+# 📦 PayHere Python SDK (Unofficial)
 
 Unofficial Python SDK for integrating with the PayHere payment gateway. This library simplifies the process of creating payment requests, verifying payment signatures, and handling responses from PayHere.
 
