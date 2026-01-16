@@ -1,15 +1,22 @@
-# PayHere Python SDK
+# 📦 PayHere Python SDK
 
 Unofficial Python SDK for integrating with the PayHere payment gateway. This library simplifies the process of creating payment requests, verifying payment signatures, and handling responses from PayHere.
 
-## Features
+## ⚠️ Disclaimer
+
+This is an **unofficial SDK** developed independently and is **not affiliated with PayHere (Pvt) Ltd**.
+
+Use at your own risk.
+Always test in **sandbox mode** before going live.
+
+## 🎯 Features
 
 -   Create payment hashes
 -   Verify webhook signatures
 -   Support for sandbox and production environments
 -   Easy-to-use API
 
-## Installation
+## 📥 Installation
 
 You can install the package via pip:
 
@@ -17,7 +24,7 @@ You can install the package via pip:
 pip install payhere-python
 ```
 
-## Usage
+## 🚀 Quick Start
 
 ```python
 from payhere import PayHere, generate_payment_hash, verify_payment_signature
@@ -137,7 +144,7 @@ except PayHereError as e:
 In production, you may need to contact PayHere support to enable refunds on your account.
 [support@payhere.lk](mailto:support@payhere.lk)
 
-## Support PayHere API
+## ✅ Supported PayHere API Endpoints
 
 -   Payment Details Retrieval
 -   Full Refund
@@ -145,7 +152,7 @@ In production, you may need to contact PayHere support to enable refunds on your
 -   Payment Hash Generation
 -   Payment notify Signature Verification
 
-## Guides to Integrate PayHere Sandbox for Development and Testing
+## 🚀 Guides to Integrate PayHere Sandbox for Development and Testing
 
 ### Payhere Sandbox Account Setup Guide
 
@@ -185,7 +192,14 @@ In production, you may need to contact PayHere support to enable refunds on your
 
 ![PayHere Checkout Flow](./images/checkout-flow.jpg)
 
-## License
+## 🔒 Security Notes
+
+-   Never expose `merchant_secret` in frontend
+-   Always generate `hash` in backend
+-   Use sandbox before production
+-   Validate PayHere webhooks
+
+## 📄 License
 
 This project is licensed under the GNU GPL v3 [LICENSE](LICENSE).
 
@@ -193,26 +207,31 @@ You are free to use, modify, and distribute this software, including for commerc
 as long as all derivative works remain open source and credit the original author.
 Please refer to the LICENSE file for more details.
 
-## Author
+## 👨‍💻 Author
 
-Kavindu Harshitha (apexkv)
+-   Kavindu Harshitha (apexkv)
+-   GitHub: [apexkv](https://github.com/apexkv/)
+-   Website: [apexkv.com](https://apexkv.com/)
+-   Email: [kavindu@apexkv.com](mailto:kavindu@apexkv.com)
 
-GitHub: [apexkv](https://github.com/apexkv/)
-
-Website: [apexkv.com](https://apexkv.com/)
-
-Email: [kavindu@apexkv.com](mailto:kavindu@apexkv.com)
-
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
 
-## Used Libraries
+## 📚 Used Libraries
 
 -   [PayHere](https://www.payhere.lk/) - The payment gateway this SDK is built for.
 -   [Requests](https://docs.python-requests.org/en/latest/) - HTTP library used for making API requests.
 -   [Pydantic](https://pydantic.dev/) - Data validation and settings management using Python type annotations.
 
-## Copyright
+## ⭐ Support the Project
+
+If this helps you:
+
+-   Star the repo
+-   Share with other devs
+-   Contribute improvements
+
+## ©️ Copyright
 
 > Copyright (c) 2026 Kavindu Harshitha(apexkv). Licensed under the GNU GPL v3.
