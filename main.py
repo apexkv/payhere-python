@@ -197,10 +197,6 @@ class PayHere:
         headers = {
             "Authorization": f"Bearer {self.get_access_token}",
             "Content-Type": "application/json",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-            "Origin": "http://localhost",
-            "Referer": "http://localhost",
-            "Host": "sandbox.payhere.lk",
         }
         data = {
             "payment_id": payment_id,
