@@ -69,7 +69,6 @@ class PayHere:
         b64_bytes = base64.b64encode(auth_str.encode("utf-8"))
         self._authorization_code = b64_bytes.decode("utf-8")
         __logger__.info("Generated Base64 encoded authorization code for PayHere.")
-        print(self._authorization_code)
         return self._authorization_code
         
     @property
@@ -103,7 +102,6 @@ class PayHere:
                 import time
                 self._access_token_expires_at = resp_json.expires_in + int(time.time())
                 __logger__.info("Successfully retrieved PayHere access token.")
-                print(self._access_token)
                 return self._access_token
             else:
                 resp_json = _try_pydantic_parse(PayHereTokenErrorResponse, response.json())
