@@ -27,7 +27,7 @@ pip install payhere-python
 ## 🚀 Quick Start
 
 ```python
-from payhere import PayHere, generate_payment_hash, verify_payment_signature
+from payhere_python import PayHere, generate_payment_hash, verify_payment_signature
 
 
 # Initialize the PayHere client
