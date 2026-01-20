@@ -11,7 +11,7 @@ long_description = readme_path.read_text(encoding="utf-8") if readme_path.exists
 setup(
     # --- Core metadata (from pyproject.toml [project]) ---
     name="payhere-python",
-    version="1.0.2",
+    version="1.0.3",
     description="Unofficial Python SDK for PayHere Payment Gateway",
     long_description=long_description,
     long_description_content_type="text/markdown",
